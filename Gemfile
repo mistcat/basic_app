@@ -6,9 +6,11 @@ gem 'rails', '3.2.1'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 
-group :development, :test do
+group :development do
   gem 'sqlite3', '1.3.5'
   gem 'rspec-rails', '2.8.1'
+  gem 'guard'
+  gem 'guard-rspec'
 end
 
 # Gems used only for assets and not required
@@ -26,7 +28,14 @@ end
 gem 'jquery-rails', '2.0.0'
 
 group :test do
+  gem 'sqlite3', '1.3.5'
+  gem 'rspec-rails', '2.8.1'
   gem 'capybara', '1.1.2'
+  gem 'rspec'
+  gem 'growl'
+  gem 'rb-fsevent'
+  gem 'spork-rails'
+  gem 'guard-spork'
 end
 
 group :production do 
