@@ -8,4 +8,9 @@ module ApplicationHelper
       "#{base_title} | #{page_title}"
     end
   end
+  def logo(page_path)
+    logo = image_tag("logo.png", alt: "Sample App", class: "round") 
+    link_to logo, page_path
+  end
+
 end
