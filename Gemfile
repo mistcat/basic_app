@@ -11,6 +11,7 @@ group :development do
   gem 'rspec-rails', '2.8.1'
   gem 'guard'
   gem 'guard-rspec'
+  gem 'annotate', '~> 2.4.1.beta'
 end
 
 # Gems used only for assets and not required
@@ -50,6 +51,9 @@ end
 
 # Use unicorn as the web server
 # gem 'unicorn'
+
+#For Password Encryption
+gem 'bcrypt-ruby', '3.0.1'
 
 # Deploy with Capistrano
 # gem 'capistrano'
