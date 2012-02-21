@@ -37,6 +37,7 @@ group :test do
   gem 'rb-fsevent'
   gem 'spork-rails'
   gem 'guard-spork'
+  gem 'factory_girl_rails', '1.4.0'
 end
 
 group :production do 
